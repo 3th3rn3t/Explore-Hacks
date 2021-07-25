@@ -1,0 +1,16 @@
+C:\Users\capta\Documents\Programming\Xamarin\Hackathon\Hackathon\Hackathon\Hackathon\bin\Debug\netstandard2.0\Hackathon.deps.json
+C:\Users\capta\Documents\Programming\Xamarin\Hackathon\Hackathon\Hackathon\Hackathon\bin\Debug\netstandard2.0\Hackathon.dll
+C:\Users\capta\Documents\Programming\Xamarin\Hackathon\Hackathon\Hackathon\Hackathon\bin\Debug\netstandard2.0\ref\Hackathon.dll
+C:\Users\capta\Documents\Programming\Xamarin\Hackathon\Hackathon\Hackathon\Hackathon\bin\Debug\netstandard2.0\Hackathon.pdb
+C:\Users\capta\Documents\Programming\Xamarin\Hackathon\Hackathon\Hackathon\Hackathon\obj\Debug\netstandard2.0\Hackathon.csproj.AssemblyReference.cache
+C:\Users\capta\Documents\Programming\Xamarin\Hackathon\Hackathon\Hackathon\Hackathon\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\capta\Documents\Programming\Xamarin\Hackathon\Hackathon\Hackathon\Hackathon\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\capta\Documents\Programming\Xamarin\Hackathon\Hackathon\Hackathon\Hackathon\obj\Debug\netstandard2.0\Hackathon.AssemblyInfoInputs.cache
+C:\Users\capta\Documents\Programming\Xamarin\Hackathon\Hackathon\Hackathon\Hackathon\obj\Debug\netstandard2.0\Hackathon.AssemblyInfo.cs
+C:\Users\capta\Documents\Programming\Xamarin\Hackathon\Hackathon\Hackathon\Hackathon\obj\Debug\netstandard2.0\Hackathon.csproj.CoreCompileInputs.cache
+C:\Users\capta\Documents\Programming\Xamarin\Hackathon\Hackathon\Hackathon\Hackathon\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\capta\Documents\Programming\Xamarin\Hackathon\Hackathon\Hackathon\Hackathon\obj\Debug\netstandard2.0\Hackathon.dll
+C:\Users\capta\Documents\Programming\Xamarin\Hackathon\Hackathon\Hackathon\Hackathon\obj\Debug\netstandard2.0\ref\Hackathon.dll
+C:\Users\capta\Documents\Programming\Xamarin\Hackathon\Hackathon\Hackathon\Hackathon\obj\Debug\netstandard2.0\Hackathon.pdb
+C:\Users\capta\Documents\Programming\Xamarin\Hackathon\Hackathon\Hackathon\Hackathon\obj\Debug\netstandard2.0\Survey.xaml.g.cs
+C:\Users\capta\Documents\Programming\Xamarin\Hackathon\Hackathon\Hackathon\Hackathon\obj\Debug\netstandard2.0\LoginPage.xaml.g.cs

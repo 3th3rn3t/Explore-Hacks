@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hackathon.Survey"
+             BackgroundColor="White">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+
+        <Frame Margin="30, 20, 30, 10" HasShadow="False" CornerRadius="30" BorderColor="Black"/>
+
+        <BoxView x:Name="Progress"  Margin="30, 20, 280, 10" CornerRadius="30" BackgroundColor="Black"/>
+
+        <!-- 1st - 280 -->
+        <!-- 2nd - 245 -->
+        <!-- 3rd - 210 -->
+        <!-- 4th - 175 -->
+        <!-- 5th - 140 -->
+        <!-- 6th - 105 -->
+        <!-- 7th - 70 -->
+        <!-- 8th - 28 -->
+
+        <Label Grid.Row="1" Margin="30, 0, 0, 0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span  x:Name="QuestionNumber" Text="Question 1" TextColor="Black" FontFamily="Mont" FontSize="24"/>
+                    <Span  Text="/15" TextColor="Black" FontFamily="Mont" FontSize="15"/>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+
+        <Label x:Name="Question" Grid.Row="2" Text="Are you a smoker currently or have you previously smoked for a significant portion of your life?" TextColor="Black" FontFamily="Mont" FontSize="16" Margin="30, 10, 30, 0" HorizontalOptions="CenterAndExpand"/>
+
+        <Frame x:Name="Op1F"  Grid.Row="3" CornerRadius="30" BackgroundColor="White" Margin="30, 10, 30, 0" BorderColor="#669DB3FF">
+            <Label x:Name="Op1" Text="True" TextColor="Black" FontFamily="MontLight" FontSize="16" Margin="0, 0, 0, 0" VerticalOptions="CenterAndExpand"/>
+        </Frame>
+        <Frame x:Name="Op2F" Grid.Row="4" CornerRadius="30" BackgroundColor="White" Margin="30, 10, 30, 0" BorderColor="#669DB3FF">
+            <Label x:Name="Op2" Text="False" TextColor="Black" FontFamily="MontLight" FontSize="16" Margin="0, 0, 0, 0" VerticalOptions="CenterAndExpand"/>
+        </Frame>
+        <Frame x:Name="Op3F" Grid.Row="5" CornerRadius="30" BackgroundColor="White" Margin="30, 10, 30, 0" BorderColor="#669DB3FF">
+            <Label x:Name="Op3" Text="" TextColor="Black" FontFamily="MontLight" FontSize="16" Margin="0, 0, 0, 0" VerticalOptions="CenterAndExpand"/>
+        </Frame>
+
+        <Frame x:Name="Next" Grid.Row="6" CornerRadius="50" BackgroundColor="#669DB3FF" Margin="120, 15, 120, 20" >
+            <Label x:Name="NextLabel" Text="Next" TextColor="Black" FontFamily="Mont" FontSize="16" Margin="0, 0, 0, 0" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+        </Frame>
+
+    </Grid>
+
+
+</ContentPage>

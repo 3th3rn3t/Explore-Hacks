@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hackathon.MainPage"
+             BackgroundColor="White">
+
+    <Grid>
+        <Grid.RowDefinitions> <!-- 7 rows with identical sizes -->
+            <RowDefinition Height="65"/>
+            <RowDefinition Height="65"/>
+            <!-- Profile Bar -->
+            <RowDefinition Height="1.5*"/>
+            <!-- Steps Bar -->
+            <RowDefinition Height="*"/>
+            <!-- Calories Bar -->
+            <RowDefinition Height="*"/>
+            <!-- Sleep Bar -->
+            
+            <RowDefinition Height="65"/>
+            <!-- Navigation Bar -->
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <!-- 2 rows with identical sizes to allow for offsetting -->
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Text="For today" FontSize="24" Margin="30, 30, 0, 0" TextColor="Black" FontFamily="Mont"/>
+        <Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Text="Good Morning!" FontSize="12" Margin="30, 0, 0, 0" TextColor="Black" FontFamily="MontLight"/>
+
+
+        <Frame Grid.Row="0" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="3" CornerRadius="30" BackgroundColor="White" Margin="90, 30, 30, 50">
+            <Image Aspect="Fill" Source="https://freepngimg.com/thumb/heart/36704-5-dark-red-heart-transparent-background-thumb.png" HeightRequest="50" WidthRequest="50"/>
+        </Frame>
+        <!-- Profile Picture Slot -->
+
+        <!-- All information will be coming from the BLE -->
+
+        <Frame Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" CornerRadius="30" BackgroundColor="White" Margin="30, 0, 0, 0">
+            <Label Text="Walk" TextColor="Black" FontSize="18" FontFamily="MontLight" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" Margin="0, 0, 0, 0"/>
+        </Frame>
+
+        <!-- <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Text="👟" TextColor="Black" FontSize="24" FontFamily="Mont" HorizontalOptions="EndAndExpand" VerticalOptions="StartAndExpand" Margin="0, 10, 20, 0"/> -->
+        <Label x:Name="Walk" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Text="7500 steps" TextColor="Black" FontSize="15" FontFamily="MontLight" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Margin="30, 0, 0, 0"/>
+        <!-- Steps Display -->
+
+        <Frame Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" CornerRadius="30" BackgroundColor="White" Margin="30, 0, 0, 0">
+            <Label Text="Calories" TextColor="Black" FontSize="18" FontFamily="MontLight" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" Margin="0, 0, 0, 0"/>
+        </Frame>
+
+        <!-- <Label Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" Text="🔥" TextColor="Black" FontSize="24" FontFamily="Mont" HorizontalOptions="EndAndExpand" VerticalOptions="StartAndExpand" Margin="0, 10, 20, 0"/> -->
+        <Label x:Name="Calories" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" Text="1107 calories" TextColor="Black" FontSize="15" FontFamily="MontLight" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Margin="30, 0, 0, 0"/>
+        <!-- Calories Display -->
+
+        <Frame Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" CornerRadius="30" BackgroundColor="White" Margin="30, 0, 0, 0">
+            <Label Text="Floors" TextColor="Black" FontSize="18" FontFamily="MontLight" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" Margin="0, 0, 0, 0"/>
+        </Frame>
+
+        <!-- <Label Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" Text="🔥" TextColor="Black" FontSize="24" FontFamily="Mont" HorizontalOptions="EndAndExpand" VerticalOptions="StartAndExpand" Margin="0, 10, 20, 0"/> -->
+        <Label x:Name="Floors" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" Text="8.5 hours" TextColor="Black" FontSize="15" FontFamily="MontLight" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Margin="30, 0, 0, 0"/>
+        <!-- Sleep Display -->
+
+        <Frame Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="3" CornerRadius="30" BackgroundColor="White" Margin="0, 0, 30, 0">
+            <Label Text="Distance" TextColor="Black" FontSize="18" FontFamily="MontLight" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" Margin="0, 0, 0, 0"/>
+        </Frame>
+
+        <!-- <Label Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="3" Text="🔥" TextColor="Black" FontSize="24" FontFamily="Mont" HorizontalOptions="EndAndExpand" VerticalOptions="StartAndExpand" Margin="0, 10, 20, 0"/> -->
+        <Label x:Name="Dis" Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="3" Text="8 ounces" TextColor="Black" FontSize="15" FontFamily="MontLight" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Margin="0, 0, 30, 0"/>
+        <!-- [] Display -->
+
+        <Frame Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="3" Grid.RowSpan="2" CornerRadius="30" BackgroundColor="White" Margin="0, 0, 30, 0">
+            <Label Text="Heart Rate" TextColor="Black" FontSize="18" FontFamily="MontLight" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" Margin="0, 0, 0, 0"/>
+        </Frame>
+
+        <!-- <Label Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="3" Grid.RowSpan="2"  Text="🔥" TextColor="Black" FontSize="24" FontFamily="Mont" HorizontalOptions="EndAndExpand" VerticalOptions="StartAndExpand" Margin="0, 10, 20, 0"/> -->
+        <Label x:Name="HeartRate" Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="3" Grid.RowSpan="2" Text="72 bpm" TextColor="Black" FontSize="15" FontFamily="MontLight" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Margin="0, 0, 30, 0"/>
+        <!-- Heart Rate Display -->
+
+        <Frame Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Margin="20, 0, 0, 0" BackgroundColor="Transparent" CornerRadius="30">
+            <Image Source="https://d338t8kmirgyke.cloudfront.net/icons/icon_pngs/000/007/878/original/graphical.png"/>
+        </Frame>
+        <Frame x:Name="GO" Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2" Margin="27, 0, 27, 10" BackgroundColor="White" CornerRadius="30">
+            <Label Text="GO" FontSize="12" Margin="0, 0, 0, 0" TextColor="Black" FontFamily="MontLight" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+        </Frame>
+        <Frame Grid.Row="5" Grid.Column="4" Grid.ColumnSpan="2" Margin="0, 0, 20, 0" BackgroundColor="Transparent" CornerRadius="30">
+            <Image Source="https://www.freepnglogos.com/uploads/heart-clipart-black-and-white/png-black-and-white-library-chalk-heart-clipart-heart-18.png"/>
+        </Frame>
+
+    </Grid>
+
+</ContentPage>

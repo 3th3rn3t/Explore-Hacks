@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hackathon.LoginPage"
+             BackgroundColor="White">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Image Aspect="AspectFill" Source="https://i.pinimg.com/originals/2b/32/23/2b3223572ebde69c5fff3a561cd54dcd.jpg"/>
+
+        <Frame Margin="30, 100, 30, 100" BackgroundColor="White" CornerRadius="30">
+            <Label Text="Login" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" TextColor="Black" FontFamily="Mont" FontSize="24" Margin="10, 10, 0, 0"/>
+        </Frame>
+
+        <Button Text="Login with Fitbit" FontFamily="Mont" Pressed="Button_Pressed" Margin="60, 250, 60, 250" CornerRadius="30" BackgroundColor="#669DB3FF"/>
+    </Grid>
+</ContentPage>
