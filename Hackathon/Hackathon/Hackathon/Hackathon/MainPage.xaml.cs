@@ -43,8 +43,8 @@ namespace Hackathon
 
         public string WebReq(string act, int start, int end)
         {
-            string access_token = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyM0I3UzQiLCJzdWIiOiI2NUhCNjciLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJyc29jIHJhY3QgcnNldCBybG9jIHJ3ZWkgcmhyIHJwcm8gcm51dCByc2xlIiwiZXhwIjoxNjI3NjgwOTg0LCJpYXQiOjE2MjcxNzE4OTB9.umn43dNidp-S2J5XHKSk_Kf_0z8BcIFeiSWBeMnPpzY";
-            string user_id = "65HB67";
+            string access_token = "[Insert access token]";
+            string user_id = "[User id]";
 
             string work = "https://api.fitbit.com/1/user/"
                 + user_id +
